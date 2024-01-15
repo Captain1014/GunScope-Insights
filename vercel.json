@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "your-source-directory",
+        "use": "@vercel/node",
+        "config": {
+          "node_version": "$(cat .nvmrc)"
+        }
+      }
+    ]
+  }
+  
