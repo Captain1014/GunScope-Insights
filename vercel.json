@@ -8,16 +8,6 @@
           "node_version": "$(cat .nvmrc)"
         }
       }
-    ],
-    "routes": [
-      {
-        "src": "/favicon.ico",
-        "dest": "/src/favicon.ico"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/src/$1"
-      }
     ]
   }
   
