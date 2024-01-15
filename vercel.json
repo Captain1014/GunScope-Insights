@@ -2,11 +2,21 @@
     "version": 2,
     "builds": [
       {
-        "src": "your-source-directory",
+        "src": "src",
         "use": "@vercel/node",
         "config": {
           "node_version": "$(cat .nvmrc)"
         }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/favicon.ico",
+        "dest": "/src/favicon.ico"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/src/$1"
       }
     ]
   }
